@@ -7,8 +7,6 @@
         = f.input :first_name
         = f.input :middle_name
         = f.input :last_name
-
-
     .span3
       = f.input :email, required: true, autofocus: true
       - if @validatable
@@ -17,7 +15,6 @@
         %br/
       = f.input :password, required: true,autocomplete: "off"
       = f.input :password_confirmation, required: true, autocomplete: "off"
-
   .row
   .form-actions
     = f.submit "Sign up"
