@@ -1,0 +1,7 @@
+.navbar.navbar.navbar-fixed-bottom.navbar-default
+  .navbar-inner
+    %center{:style => "margin-top:10px"}
+      - if Date.current.year.to_s != '2014'
+        %p Copyright 2014-#{ Date.current.year } &copy; Powered By Pledges.
+      - else
+        %p Copyright #{ Date.current.year } &copy; Powered By Pledges.
