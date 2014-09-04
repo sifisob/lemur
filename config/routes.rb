@@ -1,6 +1,8 @@
 Lemur::Application.routes.draw do
 
-  resources :platforms
+  devise_for :member_users
+
+  #resources :platforms
 
 
   root :to => 'home#home'
